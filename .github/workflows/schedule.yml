@@ -16,4 +16,4 @@ jobs:
           GIST_ID: ${{ secrets.GIST_ID}}
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           # SCU_KEY: ${{ secrets.SCU_KEY }}
-      - uses: gautamkrishnar/keepalive-workflow@v2 # using the workflow
+      - uses: world-executed/keepalive-workflow@master # using the workflow
