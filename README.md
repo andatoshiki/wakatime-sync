@@ -71,7 +71,7 @@ If you are a regular Telegram user, you may use the built in Telegram bot API to
    ```
 4. Append the two environment variables `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the repository secretes on the setting page of the repository, head to the workflow tab and manually run the action via `workflow_dispatch` to test if the integration succeeds, if you recieve a message akin to the screenshot attached above, viola.
 
-> Optionally, you may add a `[keep-alive-workflow](https://github.com/marketplace/actions/keepalive-workflow)` to automatically keep the overall workflow active in compliance with GitHub Actions’ policy, which otherwise suspends workflows due to repo inactivity if there are no commmits pushed to the repo. But this configuration MIGHT VIOLATE AGINST GITHUB's TOS as the original repository of this workflow was removed due to violation of such terms; which may result in account suspension, so proceed and use at your own discretion.
+> Optionally, you may add a [`keep-alive-workflow`](https://github.com/marketplace/actions/keepalive-workflow) to automatically keep the overall workflow active in compliance with GitHub Actions’ policy, which otherwise suspends workflows due to repo inactivity if there are no commmits pushed to the repo. But this configuration MIGHT VIOLATE AGINST GITHUB's TOS as the original repository of this workflow was removed due to violation of such terms; which may result in account suspension, so proceed and use at your own discretion.
 >
 > ```yml
 > steps:
